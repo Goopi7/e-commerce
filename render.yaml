@@ -26,4 +26,4 @@ services:
     staticPublishPath: ./build
     envVars:
       - key: REACT_APP_API_URL
-        value: https://e-commerce-backend.onrender.com/api
+        value: https://e-commerce-ngqq.onrender.com/api
