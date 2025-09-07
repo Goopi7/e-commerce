@@ -2,7 +2,7 @@ services:
   - type: web
     name: e-commerce-backend
     env: node
-    rootDir: ./backend
+    rootDir: backend
     buildCommand: npm install
     startCommand: npm start
     envVars:
@@ -16,14 +16,14 @@ services:
       # - key: JWT_SECRET
       #   sync: false  # Set this in Render dashboard
       # - key: FRONTEND_URL
-      #   value: https://e-commerce-frontend.onrender.com
+      #   sync: false  # Set this in Render dashboard
     
   - type: web
     name: e-commerce-frontend
     env: static
-    rootDir: ./frontend
+    rootDir: frontend
     buildCommand: npm install && npm run build
-    staticPublishPath: ./build
+    staticPublishPath: build
     envVars:
       - key: REACT_APP_API_URL
         value: https://e-commerce-ngqq.onrender.com/api

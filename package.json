@@ -10,7 +10,7 @@
     "start-backend": "cd backend && npm start",
     "start-frontend": "cd frontend && npm start",
     "build-frontend": "cd frontend && npm run build",
-    "build": "echo 'ERROR: This is a monorepo root. Deploy backend and frontend separately by setting Root Directory to backend or frontend in Render'",
+    "build": "echo 'Blueprint deployment: Individual services will build from their respective directories'",
     "dev-backend": "cd backend && npm run dev",
     "seed": "cd backend && node seed-fixed.js"
   },
