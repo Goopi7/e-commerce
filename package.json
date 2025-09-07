@@ -10,7 +10,7 @@
     "start-backend": "cd backend && npm start",
     "start-frontend": "cd frontend && npm start",
     "build-frontend": "cd frontend && npm run build",
-    "build": "echo 'Blueprint deployment: Individual services will build from their respective directories'",
+    "build": "node deploy-frontend.js",
     "dev-backend": "cd backend && npm run dev",
     "seed": "cd backend && node seed-fixed.js"
   },
